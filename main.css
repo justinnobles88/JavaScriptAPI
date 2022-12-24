@@ -1,0 +1,276 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    height: 60px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    font-size: 1cm;
+}
+.navbar-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+.nav-item {
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: .50cm;
+}
+
+a {
+    text-decoration: none;
+    color: ivory;
+}
+
+a:hover {
+    color:gold;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 70.5%;
+    padding: 0;
+}
+
+body{
+    margin-top: -20px;
+    margin-bottom: -20px;
+    background-color: black;
+    padding-bottom: 15px;
+}
+
+.container{
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 5vw);
+    grid-gap: 4rem;
+    padding-top: 30px;
+}
+
+.caption {
+    padding: 10px;
+    padding-top: 0px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    font-size: large;
+    text-align: center;
+}
+
+.gallery__img{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    padding: 10px;
+    display: block;
+    background-color: black;
+}
+
+.gallery__img:hover {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    padding: 10px;
+    display: block;
+    background-color: rgb(69, 76, 76);
+    cursor: grabbing;
+}
+
+.gallery__item--1{ /* The Crucifixion*/
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    box-shadow:0px 0px 20px 10px gold;
+    -moz-box-shadow:0px 0px 20px 10px gold;
+    -webkit-box-shadow:0px 0px 20px 10px gold;
+}
+
+.gallery__item--2{ /* Assumption */
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    box-shadow:0px 0px 20px 10px gold;
+    -moz-box-shadow:0px 0px 20px 10px gold;
+    -webkit-box-shadow:0px 0px 20px 10px gold;
+}
+
+.gallery__item--3{ /* Cupid Chastised */
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    box-shadow:0px 0px 20px 10px gold;
+    -moz-box-shadow:0px 0px 20px 10px gold;
+    -webkit-box-shadow:0px 0px 20px 10px gold;
+}
+
+.gallery__item--4{ /* Near The Lake*/
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    box-shadow:0px 0px 20px 10px gold;
+    -moz-box-shadow:0px 0px 20px 10px gold;
+    -webkit-box-shadow:0px 0px 20px 10px gold;
+}
+
+.gallery__item--5{ /* View of delphi*/
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 11;
+    grid-row-end: 12;
+    box-shadow:0px 0px 20px 10px gold;
+    -moz-box-shadow:0px 0px 20px 10px gold;
+    -webkit-box-shadow:0px 0px 20px 10px gold;
+}
+
+.gallery__item--6{ /* Magnolias */
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 6;
+    grid-row-end: 9;
+    box-shadow:0px 0px 20px 10px gold;
+    -moz-box-shadow:0px 0px 20px 10px gold;
+    -webkit-box-shadow:0px 0px 20px 10px gold;
+}
+
+ .gallery__item--7{ /* The Deep Sea*/
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 11;
+    box-shadow:0px 0px 20px 10px gold;
+    -moz-box-shadow:0px 0px 20px 10px gold;
+    -webkit-box-shadow:0px 0px 20px 10px gold;
+}
+
+.gallery__item--8{ /* Water Lilies*/ 
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 8;
+    grid-row-end: 11;
+    box-shadow:0px 0px 20px 10px gold;
+    -moz-box-shadow:0px 0px 20px 10px gold;
+    -webkit-box-shadow:0px 0px 20px 10px gold;
+}
+
+.gallery__item--9{ /* Interrupted Reading*/
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 9;
+    grid-row-end: 12;
+    box-shadow:0px 0px 20px 10px gold;
+    -moz-box-shadow:0px 0px 20px 10px gold;
+    -webkit-box-shadow:0px 0px 20px 10px gold;
+}
+
+.gallery__item--10{ /* Two Sisters*/
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    box-shadow:0px 0px 20px 10px gold;
+    -moz-box-shadow:0px 0px 20px 10px gold;
+    -webkit-box-shadow:0px 0px 20px 10px gold;
+}
+
+.gallery__img {
+    border-radius: 5px;
+    cursor:pointer;
+    transition: 0.1s;
+  }
+  
+.gallery__img:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+  }
+
+.modal-content {
+    margin: 5% auto;
+    border: 3px solid #888;
+    border-style: dashed;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+p {
+    color: gold;
+    font-size: larger;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    padding-right: 7px;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: gold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  h1 {
+    box-shadow:0px 0px 20px 10px gold;
+    -moz-box-shadow:0px 0px 20px 10px gold;
+    -webkit-box-shadow:0px 0px 20px 10px gold;
+    padding-top: 75px;
+    margin-top: 20px;
+    color: gold;
+    text-align: center;
+    font-size: 1.5cm;
+  }
